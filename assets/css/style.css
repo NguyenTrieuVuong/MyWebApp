@@ -239,6 +239,7 @@ html{
 
 #content .member-img{
     width: 154px;
+    height: 154px;
     margin-top: 15px;
     border-radius: 4px;
 }
@@ -343,6 +344,7 @@ html{
 
 /* Map section */
 .map-section img{
+    margin: 20px 0;
     width: 100%;
 }
 
