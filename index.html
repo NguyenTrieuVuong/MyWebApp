@@ -195,12 +195,12 @@
       </div>
     </footer>
   </div>
-  <div class="modal">
+  <div class="modal" id="buyTicketModal">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header bg-info text-white">
           <i class="bi bi-bag" style="font-size: 24px; margin-right: 10px;"></i>
-          Tickets
+          Buy tickets
           <button class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -221,36 +221,40 @@
   </div>
 
   <script>
-    const buyBtns = document.querySelectorAll('.btn')
-    const modal = document.querySelector('.modal')
-    const modalContainer = document.querySelector('.modal-dialog')
-    const modalClose = document.querySelector('.btn-close')
+    const buyBtns = document.querySelectorAll('.btn');
+    const modal = document.querySelector('#buyTicketModal');
+    const modalContainer = document.querySelector('.modal-dialog');
+    const modalClose = document.querySelector('.btn-close');
 
     // Hàm hiển thị modal mua vé (thêm class open vào modal)
-    function showBuyTickets(){
-        modal.classList.add('open')
+    function showBuyTickets() {
+      modal.style.display = "block";
+      setTimeout(() => {
+        modal.classList.add('open');
+      }, 10); // Delay for a smooth transition
     }
 
     // Hàm ẩn modal mua vé (gỡ bỏ class open vào modal)
-    function hideBuyTickets(){
-        modal.classList.remove('open')
+    function hideBuyTickets() {
+      modal.classList.remove('open');
+      setTimeout(() => {
+        modal.style.display = "none";
+      }, 300); // Delay for transition effect
     }
 
     // Lặp qua từng thẻ button và nghe hành vi click
-    for(const buyBtn of buyBtns){
-        buyBtn.addEventListener('click', showBuyTickets)
+    for (const buyBtn of buyBtns) {
+      buyBtn.addEventListener('click', showBuyTickets);
     }
 
     // Nghe hành vi click vào button close
-    modalClose.addEventListener('click', hideBuyTickets)
+    modalClose.addEventListener('click', hideBuyTickets);
 
-    modal.addEventListener('click', hideBuyTickets)
+    modal.addEventListener('click', hideBuyTickets);
 
-    modalContainer.addEventListener('click', function(event){
-        event.stopPropagation()
-    })
-</script>
-
+    modalContainer.addEventListener('click', function (event) {
+      event.stopPropagation();
+    });
+  </script>
 </body>
-
 </html>
