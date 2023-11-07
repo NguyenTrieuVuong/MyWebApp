@@ -5,10 +5,11 @@
         $email = $_POST['email'];
         $pass = $_POST['pass'];
         $conPass = $_POST['conPass'];
+        $role=$_POST['userRole'];
         if($pass === $conPass){
             var_dump($userName);
-            $requete = $con->prepare("INSERT INTO users(username,Email,Password)
-             VALUES('$userName','$email','$pass')");
+            $requete = $con->prepare("INSERT INTO users(username,Email,Password,role)
+             VALUES('$userName','$email','$pass','$role')");
             $requete->execute();
             header('location:index.php');
         }
