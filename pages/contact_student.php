@@ -16,7 +16,7 @@
         <!-- start sidebar -->
 
         <?php
-        include "component/sidebar.php";
+        include "component/sidebar_student.php";
         include 'conixion.php';
         $nbr_students = $con->query("SELECT * FROM students_list");
         $nbr_students = $nbr_students->rowCount();

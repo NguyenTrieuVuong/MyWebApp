@@ -15,7 +15,7 @@
     <main class="dashboard d-flex">
         <!-- start sidebar -->
         <?php 
-            include "component/sidebar.php";
+            include "component/sidebar_student.php";
         ?>
         <!-- end sidebar -->
 
@@ -27,7 +27,7 @@
           
         
             <!-- start student list table -->
-            <div class="button-add-student">
+            <!-- <div class="button-add-student">
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Add course</button>
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                           <div class="modal-dialog">
@@ -56,51 +56,37 @@
                                 </div>
                               </form>
                             </div>
-                            
                           </div>
                         </div>
-                    </div>
+                    </div> -->
                 <div class="courses">
-                <div class="table-responsive">
-    <table class="table table-striped table-bordered">
-        <thead class="thead-dark">
-            <tr>
-                <th scope="col">Courses</th>
-                <th scope="col">Description</th>
-                <th scope="col">Subject code</th>
-                <th scope="col">Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php
-            include 'conixion.php';
-            $requete = "SELECT * FROM courses";
-            $result = $con->query($requete);
+                    <table class="table table-responsive">
+                        <thead>
+                            <th>Courses</th>
+                            <th>Description</th>
+                            <th>Subject code</th>
+                        </thead>
+                        <tbody> 
+                        <?php include 'conixion.php'; 
+                                $requete = "SELECT * FROM courses";
+                                $result = $con -> query($requete);
 
-            foreach ($result as $value) :
-            ?>
+                                foreach($result as $value):
+                            ?>
 
-                <tr>
-                    <td><?php echo $value['Name'] ?></td>
-                    <td><?php echo $value['Description'] ?></td>
-                    <td><?php echo $value['Prix'] ?></td>
-                    <td>
-                        <a href="modifier_2.php?id=<?php echo $value['id'] ?>" class="btn btn-primary" >
-                        <i class="far fa-pen" style="color: white;></i> <span style="color: white;">Modifier</span>
-                        </a>
-                        <a href="remove_2.php?id=<?php echo $value['id'] ?>" class="btn btn-danger">
-                            <i class="far fa-trash"></i> Supprimer
-                        </a>
-                        
-                       
-                    </td>
-                </tr>
-
-            <?php endforeach; ?>
-        </tbody>
-    </table>
-</div>
-
+                            <tr> 
+                                <td><?php echo $value['Name'] ?></td>
+                                <td><?php echo $value['Description'] ?></td>
+                                <td><?php echo $value['Prix'] ?></td>
+                                <!-- <td class="d-md-flex gap-3 mt-3">
+                                  <a href="modifier_2.php?id=<?php echo $value['id']?>"><i class="far fa-pen"></i></a>
+                                  <a href="remove_2.php?id=<?php echo $value['id']?>"><i class="far fa-trash"></i></a>
+                                </td> -->
+                            </tr>
+                            
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
                 </div>
             
             </div>
