@@ -45,7 +45,7 @@
                   </div>
                   <div class="">
                     <label for="recipient-name" class="col-form-label">Lịch Trình:</label>
-                    <input type="text" class="form-control" id="recipient-name" name="PaymentSchedule">
+                    <input type="date" class="form-control" id="recipient-name" name="PaymentSchedule">
                   </div>
                   <div class="">
                     <label for="recipient-name" class="col-form-label">Số Hóa Đơn:</label>
@@ -102,6 +102,10 @@
                     <td><?php echo $value['AmountPaid'] ?></td>
                     <td><?php echo $value['BalanceAmount'] ?></td>
                     <td><?php echo $value['Date'] ?></td>
+                    <td class="d-md-flex gap-3 mt-3">
+                                  <a href="modifier_3.php?id=<?php echo $value['id']?>"><i class="far fa-pen"></i></a>
+                                  <a href="remove_3.php?id=<?php echo $value['id']?>"><i class="far fa-trash"></i></a>
+                               </td>
                 </tr>
 
             <?php endforeach; ?>
