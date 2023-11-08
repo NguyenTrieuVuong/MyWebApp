@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 08, 2023 lúc 05:56 AM
+-- Thời gian đã tạo: Th10 08, 2023 lúc 02:16 PM
 -- Phiên bản máy phục vụ: 10.4.28-MariaDB
 -- Phiên bản PHP: 8.0.28
 
@@ -52,7 +52,7 @@ INSERT INTO `courses` (`id`, `Name`, `Description`, `Prix`) VALUES
 CREATE TABLE `payments_list` (
   `id` int(11) NOT NULL,
   `Name` varchar(255) NOT NULL,
-  `PaymentSchedule` varchar(255) NOT NULL,
+  `PaymentSchedule` date NOT NULL,
   `BillNumber` varchar(255) NOT NULL,
   `AmountPaid` varchar(255) NOT NULL,
   `BalanceAmount` varchar(255) NOT NULL,
@@ -64,9 +64,8 @@ CREATE TABLE `payments_list` (
 --
 
 INSERT INTO `payments_list` (`id`, `Name`, `PaymentSchedule`, `BillNumber`, `AmountPaid`, `BalanceAmount`, `Date`) VALUES
-(20, 'Tuan', '100', '1', '2', '3', '0000-00-00'),
-(23, 'Tuan', '1231', '3123', '312', '1111111', '2202-02-03'),
-(24, 'Vuong', '1231', '100', '200', '123$', '2001-02-02');
+(20, 'Tuan', '2020-01-20', '22', '2', '3', '2020-01-12'),
+(25, 'Vương', '2023-08-22', '5', '100$', '0', '2023-08-20');
 
 -- --------------------------------------------------------
 
@@ -90,7 +89,7 @@ CREATE TABLE `students_list` (
 
 INSERT INTO `students_list` (`Id`, `img`, `Name`, `Email`, `Phone`, `EnrollNumber`, `DateOfAdmission`) VALUES
 (2, 'Adobe_XD_CC_icon.svg.png', 'ss', 'ssss', 'ss', 'ss', '2022-11-18'),
-(3, 'Angular_full_color_logo.svg.png', 'Hieu', 'hoanghuuhieu@gmail.com', '093213124', '200$', '0000-00-00'),
+(3, 'Angular_full_color_logo.svg.png', 'Hieu', 'hoanghuuhieu@gmail.com', '093213124', '20003123', '0000-00-00'),
 (6, 'hoc-tieng-anh-voi-nguoi-nuoc-ngoai.jpg', 'Tuấn Nguyễn Anh', 'nguyenatuan0302@gmail.com', '0876687256', '20002176', '0000-00-00'),
 (7, 'image.jpg', 'Nguyễn Triệu Vương', 'nguyentrieuvuong@gmail.com', '031294712', '04128481', '2002-09-06');
 
@@ -160,13 +159,13 @@ ALTER TABLE `courses`
 -- AUTO_INCREMENT cho bảng `payments_list`
 --
 ALTER TABLE `payments_list`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT cho bảng `students_list`
 --
 ALTER TABLE `students_list`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT cho bảng `users`
