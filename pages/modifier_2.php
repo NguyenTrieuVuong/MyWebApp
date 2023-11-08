@@ -27,20 +27,20 @@
     <form method="POST" action="update_2.php" enctype="multipart/form-data">
 
       <div class="">
-        <label for="recipient-name" class="col-form-label">Name:</label>
+        <label for="recipient-name" class="col-form-label">Tên khóa học:</label>
         <input type="text" class="form-control" id="recipient-name" name="Name" value="<?php echo $table['Name'] ?>">
       </div>
       
       <div class="">
-        <label for="recipient-name" class="col-form-label">Description:</label>
+        <label for="recipient-name" class="col-form-label">Mô tả:</label>
         <input type="text" class="form-control" id="recipient-name" name="Description" value="<?php echo $table['Description'] ?>">
       </div>
       <div class="">
-        <label for="recipient-name" class="col-form-label">Prix:</label>
+        <label for="recipient-name" class="col-form-label">Giá bán:</label>
         <input type="text" class="form-control" id="recipient-name" name="Prix" value="<?php echo $table['Prix'] ?>">
       </div>
       <div class="modal-footer">
-        <button type="submit" name="submit" class="btn btn-primary">Update student</button>
+        <button type="submit" name="submit" class="btn btn-primary">Cập nhật</button>
       </div>
     </form>
   </div>

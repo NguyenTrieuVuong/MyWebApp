@@ -37,7 +37,7 @@
         <?php 
             include "component/header.php";
         ?>
-            <div class="cards row gap-3 justify-content-center mt-5">
+        <div class="cards row gap-3 justify-content-center mt-5">
                 <div class=" card__items card__items--blue col-md-3 position-relative">
                     <div class="card__students d-flex flex-column gap-2 mt-3">
                         <i class="far fa-graduation-cap h3"></i>
@@ -76,12 +76,17 @@
                     </div>
                     <span class="h5 fw-bold nbr"><?php echo $nbr_user; ?></span>
                 </div>
+                
             </div>
-            <img  src="https://nativespeaker.vn/resource/images/hoc-tieng-anh-voi-nguoi-nuoc-ngoai.jpg" id="img">
+            
+            <img src="https://nativespeaker.vn/resource/images/hoc-tieng-anh-voi-nguoi-nuoc-ngoai.jpg" id="img">
+            
+            
         </div>
-        
+         
         <!-- end contentpage -->
     </main>
+   
     <script src="../js/script.js"></script>
     <script src="/js/bootstrap.bundle.js"></script>
 </body>

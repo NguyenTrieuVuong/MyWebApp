@@ -21,36 +21,63 @@
         <ul class="logout d-flex justify-content-start list-unstyled">
             <li class=" h7"><a class="nav-link text-dark" href="../index.php"><span>Đăng xuất</span><i class="fal fa-sign-out-alt ms-2"></i></a></li>
         </ul>
-        
-    </div>
-        <div class="codepro-time">
-            <span id="codepro-hour"></span>
-            <span id="codepro-date"></span>
-        </div>
-        <style>
-            
-            .codepro-time{text-align:center;}
-            #codepro-hour{font-weight:400;display:block;font-size:20px;margin: 0 0 5px;letter-spacing:5px;}
-        </style> 
-        <script>
-            var myVar = setInterval(function() {
-                myTimer()
-            }, 1000);
-            function myTimer() {
-                var d = new Date();
-                var t = d.toLocaleTimeString();
-                document.getElementById("codepro-hour").innerHTML = t;
+        <!-- <style>
+            #clock {
+                border: 1px solid #333; /* Màu và độ rộng của đường viền */
+                padding: 10px; /* Khoảng cách bên trong phần tử */
             }
-            n = new Date();
-            if (n.getTimezoneOffset() == 0) t = n.getTime() + (7 * 60 * 60 * 1000);
-            else t = n.getTime();
-            n.setTime(t);
-            var dn = new Array("Chủ nhật", "Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6", "Thứ 7");
-            d = n.getDay();
-            m = n.getMonth() + 1;
-            y = n.getFullYear()
-            var date = dn[d] + ", " + (n.getDate() < 10 ? "0" : "") + n.getDate() + "/" + (m < 10 ? "0" : "") + m + "/" + y;
-            document.getElementById("codepro-date").innerHTML = date;
-        </script>
+        </style>
+        <span id="clock" style="margin-right: 10px; color: black;" class="clock"></span>
+        <script>
+            function updateClock() {
+                var now = new Date();
+                var hours = now.getHours().toString().padStart(2, '0');
+                var minutes = now.getMinutes().toString().padStart(2, '0');
+                var seconds = now.getSeconds().toString().padStart(2, '0');
+                var date = now.toLocaleDateString();
+                
+                var clockElement = document.getElementById('clock');
+                clockElement.innerHTML =  date +' <br> ' + hours + ':' + minutes + ':' + seconds ;
+            }
+
+            // Cập nhật đồng hồ mỗi giây
+            setInterval(updateClock, 1000);
+
+            // Đảm bảo hiển thị đồng hồ khi trang web được tải
+            updateClock();
+        </script> -->
+    </div>
+    <hr>
+
+    <div class="codepro-time">
+    <span id="codepro-hour"></span>
+    <span id="codepro-date"></span>
+    </div>
+    <style>
+        
+        .codepro-time{text-align:center;}
+        #codepro-hour{font-weight:200;display:block;font-size:20px;margin: 0 0 5px;letter-spacing:5px;}
+    </style> 
+    <script>
+        var myVar = setInterval(function() {
+            myTimer()
+        }, 10);
+        function myTimer() {
+            var d = new Date();
+            var t = d.toLocaleTimeString();
+            document.getElementById("codepro-hour").innerHTML = t;
+        }
+        n = new Date();
+        if (n.getTimezoneOffset() == 0) t = n.getTime() + (7 * 60 * 60 * 1000);
+        else t = n.getTime();
+        n.setTime(t);
+        var dn = new Array("Chủ nhật", "Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6", "Thứ 7");
+        d = n.getDay();
+        m = n.getMonth() + 1;
+        y = n.getFullYear()
+        var date = dn[d] + ", " + (n.getDate() < 10 ? "0" : "") + n.getDate() + "/" + (m < 10 ? "0" : "") + m + "/" + y;
+        document.getElementById("codepro-date").innerHTML = date;
+    </script>
+    
 
 </div>

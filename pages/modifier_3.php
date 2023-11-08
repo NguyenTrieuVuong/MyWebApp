@@ -27,12 +27,12 @@
     <form method="POST" action="update_3.php" enctype="multipart/form-data">
 
       <div class="">
-        <label for="recipient-name" class="col-form-label">Name:</label>
+        <label for="recipient-name" class="col-form-label">Tên học viên:</label>
         <input type="text" class="form-control" id="recipient-name" name="Name" value="<?php echo $table['Name'] ?>">
       </div>
       
       <div class="">
-        <label for="recipient-name" class="col-form-label">Lịch Trình:</label>
+        <label for="recipient-name" class="col-form-label">Lịch trình thanh toán:</label>
         <input type="date" class="form-control" id="recipient-name" name="PaymentSchedule" value="<?php echo $table['PaymentSchedule'] ?>">
       </div>
       <div class="">
@@ -52,7 +52,7 @@
                     <input type="date" class="form-control" id="recipient-name" name="Date">
                   </div>
       <div class="modal-footer">
-        <button type="submit" name="submit" class="btn btn-primary">Update student</button>
+        <button type="submit" name="submit" class="btn btn-primary">Cập nhật</button>
       </div>
     </form>
   </div>

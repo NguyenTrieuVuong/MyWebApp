@@ -28,31 +28,33 @@
         
             <!-- start student list table -->
             <div class="button-add-student">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Add course</button>
+                        <p></p>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Thêm khóa học</button>
+                        <p></p>
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                           <div class="modal-dialog">
                             <div class="modal-content">
                               <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Add courses</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Thêm khóa học</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
                               <div class="modal-body">
                               <form method="POST" action="add_course.php" enctype="multipart/form-data" onsubmit="return validateForm();">
                                 <div class="">
-                                  <label for="recipient-name" class="col-form-label">Name:</label>
+                                  <label for="recipient-name" class="col-form-label">Tên khóa học:</label>
                                   <input type="text" class="form-control" id="recipient-name" name="Name">
                                 </div>
                                 <div class="">
-                                  <label for="description" class="col-form-label">Description:</label>
+                                  <label for="description" class="col-form-label">Mô tả:</label>
                                   <input type="text" class="form-control" id="description" name="Description">
                                 </div>
                                 <div class="">
-                                  <label for="subject-code" class="col-form-label">Subject code:</label>
+                                  <label for="subject-code" class="col-form-label">Giá bán:</label>
                                   <input type="text" class="form-control" id="subject-code" name="Prix">
                                 </div>
                                 <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                  <button type="submit" name="submit" class="btn btn-primary">Add courses</button>
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                                  <button type="submit" name="submit" class="btn btn-primary">Thêm mới</button>
                                 </div>
                               </form>
                             </div>
@@ -63,12 +65,13 @@
                 <div class="courses">
                 <div class="table-responsive">
     <table class="table table-striped table-bordered">
+      
         <thead class="thead-dark">
             <tr>
-                <th scope="col">Courses</th>
-                <th scope="col">Description</th>
-                <th scope="col">Subject code</th>
-                <th scope="col">Actions</th>
+                <th scope="col">Tên khóa học</th>
+                <th scope="col">Mô tả</th>
+                <th scope="col">Giá bán</th>
+                <th scope="col"></th>
             </tr>
         </thead>
         <tbody>
@@ -86,11 +89,11 @@
                     <td><?php echo $value['Prix'] ?></td>
                     <td>
                         <a href="modifier_2.php?id=<?php echo $value['id'] ?>" class="btn btn-primary" >
-                        <i class="far fa-pen" style="color: white;></i> <span style="color: white;">Modifier</span>
+                        <i class="far fa-pen" style="color: white;">  <span style="color: white;">Chỉnh sửa</span></i>
                         </a>
-                        <a href="remove_2.php?id=<?php echo $value['id'] ?>" class="btn btn-danger">
-                            <i class="far fa-trash"></i> Supprimer
-                        </a>
+                        <button class="btn btn-danger" onclick="confirmDelete1(<?php echo $value['id'] ?>)">
+                            <i class="far fa-trash"></i> Xóa
+                        </button>
                         
                        
                     </td>

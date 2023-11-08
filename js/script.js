@@ -20,3 +20,18 @@ barhamburger.addEventListener("click",function(){
 closemenu.addEventListener("click",function(){
     sidebar.classList.add("hidden-sidebar-mobile");
 });
+function confirmDelete1(id) {
+    if (confirm("Bạn có muốn xóa không?")) {
+        window.location.href = "remove_2.php?id=" + id;
+    }
+}
+function confirmDelete2(id) {
+    if (confirm("Bạn có muốn xóa không?")) {
+        window.location.href = "remove.php?Id=" + id;
+    }
+}
+function confirmDelete(id) {
+    if (confirm("Bạn có muốn xóa không?")) {
+        window.location.href = "remove_3.php?id=" + id;
+    }
+}

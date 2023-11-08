@@ -153,7 +153,7 @@ input[type="email"]::placeholder,input[type="password"]::placeholder{
 /* Đặt kiểu kẻ dọc và màu cho các đường kẻ dọc */
 .table td,
 .table th {
-    border-right: 3px solid #ccc; Thêm kẻ đứt đoạn bên phải mỗi ô
+    border-right: 3px solid #ccc; 
 }
 
 .student-list-header{
@@ -186,7 +186,7 @@ input[type="email"]::placeholder,input[type="password"]::placeholder{
 .valid{
     color: red;
 }
-@media screen and (min-width:768px){
+@media screen and (min-width:720px){
     .bg-sidebar{
         position: sticky !important;
         top: 0;
@@ -197,7 +197,7 @@ input[type="email"]::placeholder,input[type="password"]::placeholder{
         
     }
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:720px){
     .hidden-sidebar-mobile{
         margin-left: -50%;
     }
@@ -206,9 +206,10 @@ input[type="email"]::placeholder,input[type="password"]::placeholder{
 #img{
     position: fixed;
     display: flex;
-    margin-left: 220px;
-    margin-top: 10px;
+    margin-left: 360px;
+    margin-top: 20px;
     width: 40%;
+   
 }
 .table td, .table th {
     text-align: center; /* Căn giữa nội dung */

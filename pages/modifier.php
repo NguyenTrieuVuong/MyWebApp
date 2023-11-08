@@ -26,11 +26,11 @@
 
     <form method="POST" action="update.php" enctype="multipart/form-data">
       <div class="">
-        <label for="recipient-name" class="col-form-label">img:</label>
+        <label for="recipient-name" class="col-form-label">Avatar(image):</label>
         <input type="file" class="form-control" id="recipient-name" accept=".jpg,.png,.jpeg" name="img">
       </div>
       <div class="">
-        <label for="recipient-name" class="col-form-label">Name:</label>
+        <label for="recipient-name" class="col-form-label">Tên học viên:</label>
         <input type="text" class="form-control" id="recipient-name" name="Name" value="<?php echo $table['Name'] ?>">
       </div>
       <div class="">
@@ -38,19 +38,19 @@
         <input type="text" class="form-control" id="recipient-name" name="Email" value="<?php echo $table['Email'] ?>">
       </div>
       <div class="">
-        <label for="recipient-name" class="col-form-label">Phone:</label>
+        <label for="recipient-name" class="col-form-label">Số điện thoại:</label>
         <input type="text" class="form-control" id="recipient-name" name="Phone" value="<?php echo $table['Phone'] ?>">
       </div>
       <div class="">
-        <label for="recipient-name" class="col-form-label">Student code:</label>
+        <label for="recipient-name" class="col-form-label">Mã học viên:</label>
         <input type="text" class="form-control" id="recipient-name" name="EnrollNumber" value="<?php echo $table['EnrollNumber'] ?>">
       </div>
       <div class="">
-        <label for="recipient-name" class="col-form-label">Date of admission:</label>
+        <label for="recipient-name" class="col-form-label">Ngày tham gia:</label>
         <input type="date" class="form-control" id="recipient-name" name="DateOfAdmission" value="<?php echo $table['DateOfAdmission'] ?>">
       </div>
       <div class="modal-footer">
-        <button type="submit" name="submit" class="btn btn-primary">Update student</button>
+        <button type="submit" name="submit" class="btn btn-primary">Cập nhật</button>
       </div>
     </form>
   </div>
