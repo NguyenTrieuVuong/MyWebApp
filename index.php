@@ -44,7 +44,7 @@
     <label class="form-check-label" for="exampleCheck1">Remember Me</label>
   </div>
           <button type="submit" name="submit" class="btn text-white w-100 text-uppercase">sign in</button>
-          <p class="mt-4">Forgot your password? <a href="resetpass.php">Reset Password</a></p>
+          <p class="mt-4">Forgot your password? <a href="newpass.php">Reset Password</a></p>
           
         </form>
         <button href="" class="btn-register btn btn-success mb-3">Create Account</button>

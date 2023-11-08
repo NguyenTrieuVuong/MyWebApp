@@ -1,19 +1,27 @@
 <?php
-echo $_POST['username'];
-echo $_POST['email'];
-if (isset($_POST['submit'])){
-    include './pages/conixion.php';
-    $username = $_POST['username'];
-    $email = $_POST['email'];
-    $requete = "SELECT * FROM users WHERE username = '$username' and Email = '$email'";
-    $statment = $con -> prepare($requete);
-    $statment -> execute();
-    $result = $statment -> fetch();
-    if ($username == $result['username'] && $email == $result['Email']){
-        //header("location:newpass.php");
-        echo $result['username'];
-        echo $result['Email'];
+if (isset($_POST['submit'])) {
+    $username = isset($_POST['username']) ? $_POST['username'] : '';
+    $email = isset($_POST['email']) ? $_POST['email'] : '';
+
+    if (empty($username) || empty($email)) {
+        echo "Vui lòng điền đầy đủ thông tin để tìm mật khẩu.";
+    } else {
+        include './pages/conixion.php';
+        $requete = "SELECT * FROM users WHERE username = '$username' and Email = '$email'";
+        $statment = $con->prepare($requete);
+        $statment->execute();
+        $result = $statment->fetch();
+
+        if ($result && $username == $result['username'] && $email == $result['Email']) {
+
+            echo $result['username'];
+            echo $result['Email'];
+            header("location:newpass.php");
+        } else {
+            echo "Không tìm thấy thông tin người dùng.";
+        }
     }
+    
 }
 ?>
 <html>
