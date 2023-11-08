@@ -77,9 +77,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reset Password</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="bg-light d-flex justify-content-center align-items-center">
+<body class="bg-light d-flex justify-content-center align-items-center" id="pass" style="margin-top: 100px;">
     <div class="container">
         <div class="row">
             <div class="col-md-6 offset-md-3">
