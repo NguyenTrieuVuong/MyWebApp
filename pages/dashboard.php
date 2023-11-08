@@ -77,8 +77,9 @@
                     <span class="h5 fw-bold nbr"><?php echo $nbr_user; ?></span>
                 </div>
             </div>
-                <img src="https://nativespeaker.vn/resource/images/hoc-tieng-anh-voi-nguoi-nuoc-ngoai.jpg" id="img">
+            <img  src="https://nativespeaker.vn/resource/images/hoc-tieng-anh-voi-nguoi-nuoc-ngoai.jpg" id="img">
         </div>
+        
         <!-- end contentpage -->
     </main>
     <script src="../js/script.js"></script>
