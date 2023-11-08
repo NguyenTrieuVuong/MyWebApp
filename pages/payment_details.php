@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Danh sách thanh toán</title>
+  <title>Payments_list</title>
   <link rel="stylesheet" href="../css/bootstrap.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -28,19 +28,19 @@
 
       <!-- start student list table -->
       <div class="button-add-student">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Thanh toán</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Payment</button>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Thanh toán</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Payments</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <form method="POST" action="add_payment.php" enctype="multipart/form-data">
 
                   <div class="">
-                    <label for="recipient-name" class="col-form-label">Tên:</label>
+                    <label for="recipient-name" class="col-form-label">Name:</label>
                     <input type="text" class="form-control" id="recipient-name" name="Name">
                   </div>
                   <div class="">
@@ -64,8 +64,8 @@
                     <input type="date" class="form-control" id="recipient-name" name="Date">
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                    <button type="submit" name="submit" class="btn btn-primary">Thêm thanh toán</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" name="submit" class="btn btn-primary">Add payment</button>
                   </div>
                 </form>
               </div>
@@ -74,35 +74,41 @@
         </div>
       </div>
       <div class="courses">
-        <table class="table table-responsive">
-          <thead>
-            <th>Tên</th>
-            <th>Lịch trình thanh toán</th>
-            <th>Số hóa đơn</th>
-            <th>Số tiền đã thanh toán</th>
-            <th>Số tiền còn nợ</th>
-            <th>Ngày thanh toán</th>
-          </thead>
-          <tbody>
-            <?php include 'conixion.php';
+      <div class="table-responsive">
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Tên</th>
+                <th scope="col">Lịch trình thanh toán</th>
+                <th scope="col">Số hóa đơn</th>
+                <th scope="col">Số tiền đã thanh toán</th>
+                <th scope="col">Số tiền còn nợ</th>
+                <th scope="col">Ngày thanh toán</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            include 'conixion.php';
             $requete = "SELECT * FROM payments_list";
             $result = $con->query($requete);
 
             foreach ($result as $value) :
             ?>
 
-              <tr>
-                <td><?php echo $value['Name'] ?></td>
-                <td><?php echo $value['PaymentSchedule'] ?></td>
-                <td><?php echo $value['BillNumber'] ?></td>
-                <td><?php echo $value['AmountPaid'] ?></td>
-                <td><?php echo $value['BalanceAmount'] ?></td>
-                <td><?php echo $value['Date'] ?></td>
-              </tr>
+                <tr>
+                    <td><?php echo $value['Name'] ?></td>
+                    <td><?php echo $value['PaymentSchedule'] ?></td>
+                    <td><?php echo $value['BillNumber'] ?></td>
+                    <td><?php echo $value['AmountPaid'] ?></td>
+                    <td><?php echo $value['BalanceAmount'] ?></td>
+                    <td><?php echo $value['Date'] ?></td>
+                </tr>
 
             <?php endforeach; ?>
-          </tbody>
-        </table>
+        </tbody>
+    </table>
+</div>
+
       </div>
 
     </div>

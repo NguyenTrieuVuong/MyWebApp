@@ -16,7 +16,7 @@
     <main class="dashboard d-flex">
         <!-- start sidebar -->
         <?php 
-            include "component/sidebar.php";
+            include "component/sidebar_student.php";
         ?>
         <!-- end sidebar -->
 
@@ -34,7 +34,7 @@
                     <div class="short">
                         <i class="far fa-sort"></i>
                     </div>
-                    <?php include 'component/popupadd.php'; ?>
+                    <!-- <?php include 'component/popupadd.php'; ?> -->
                 </div>
             </div>
             <div class="table-responsive">
@@ -63,10 +63,10 @@
                                 <td><?php echo $value['Phone'] ?></td>
                                 <td><?php echo $value['EnrollNumber'] ?></td>
                                 <td><?php echo $value['DateOfAdmission'] ?></td>
-                                <td class="d-md-flex gap-3 mt-3">
+                                <!-- <td class="d-md-flex gap-3 mt-3">
                                   <a href="modifier.php?Id=<?php echo $value['Id']?>"><i class="far fa-pen"></i></a>
                                   <a href="remove.php?Id=<?php echo $value['Id']?>"><i class="far fa-trash"></i></a>
-                                </td>
+                                </td> -->
                         </tr> 
 
                         <?php endforeach; ?>
