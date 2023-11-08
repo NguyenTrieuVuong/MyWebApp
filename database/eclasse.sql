@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 07, 2023 lúc 07:09 AM
+-- Thời gian đã tạo: Th10 08, 2023 lúc 05:56 AM
 -- Phiên bản máy phục vụ: 10.4.28-MariaDB
 -- Phiên bản PHP: 8.0.28
 
@@ -114,9 +114,9 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `username`, `Email`, `Password`, `role`) VALUES
 (1, 'sabir', 'sabir@gmail.com', 'Sabir123', ''),
-(2, 'tung', 'nguyenatuan0302@gmail.com', '12345678', ''),
 (3, 'tung', 'nguyen2atuan0302@gmail.com', '12345678', 'admin'),
-(4, 'hieu', 'hoanghuuhieu@gmail.com', '12345678', 'User');
+(4, 'hieu', 'hoanghuuhieu@gmail.com', '12345678', 'User'),
+(5, 'tuan', 'nguyenatuan0302@gmail.com', '12345', 'admin');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -172,7 +172,7 @@ ALTER TABLE `students_list`
 -- AUTO_INCREMENT cho bảng `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
