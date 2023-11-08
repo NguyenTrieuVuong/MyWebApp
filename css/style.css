@@ -7,6 +7,7 @@
     height: 30px !important;
     padding: 3px 3px;
     font-size: 15px;
+    color: #FF0000; /* Đổi màu chữ thành đỏ */
 }
 .bg-sign-in{
     background:linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%);
@@ -126,16 +127,35 @@ input[type="email"]::placeholder,input[type="password"]::placeholder{
     border-collapse: separate;
     border-spacing: 0 15px;
 }
-.table th{
-    font-size: 12px;
-    color:#ACACAC;
+.table th {
+    font-size: 20px; /* Đặt kích thước chữ lớn hơn (ví dụ: 24px) */
+    color: #007bff; /* Đặt màu chữ (ví dụ: màu xanh) */
+    font-family: "Arial", sans-serif; /* Thay đổi kiểu chữ (ví dụ: Arial) */
+    font-weight: bold; /* Tùy chọn: Đặt độ đậm cho tiêu đề */
+    
 }
-table tbody{
-    font-size: 14px;
+
+/* Đặt kiểu chữ cho nội dung bảng */
+.table tbody {
+    font-size: 15px;
 }
-.table a{
-    color:#00C1FE;
+
+/* Đặt màu cho liên kết */
+.table a {
+    color: #00C1FE;
 }
+
+/* Thêm kẻ dọc cho bảng */
+.table {
+    border-collapse: collapse; /* Gộp các đường kẻ để tạo kẻ đứt liền */
+}
+
+/* Đặt kiểu kẻ dọc và màu cho các đường kẻ dọc */
+.table td,
+.table th {
+    border-right: 3px solid #ccc; Thêm kẻ đứt đoạn bên phải mỗi ô
+}
+
 .student-list-header{
     border-bottom: 2px solid #E5E5E5;
 }
@@ -182,4 +202,47 @@ table tbody{
         margin-left: -50%;
     }
     
+}
+#img{
+    position: fixed;
+    display: flex;
+    margin-left: 220px;
+    margin-top: 10px;
+    width: 40%;
+}
+.table td, .table th {
+    text-align: center; /* Căn giữa nội dung */
+    vertical-align: middle; /* Căn giữa theo chiều dọc */
+}
+
+/* Để căn giữa tiêu đề bảng */
+.table th {
+    text-align: center; /* Căn giữa tiêu đề */
+}
+
+/* Để căn giữa nội dung của tất cả các ô trong bảng */
+.table tbody td {
+    text-align: center; /* Căn giữa nội dung */
+}
+.table tbody tr {
+    border-bottom: 2px solid gray; /* Đặt màu kẻ dưới của các dòng trong bảng là màu vàng */
+}
+#img {
+
+    height: auto; /* Đảm bảo tỷ lệ khung hình tự động được bảo toàn */
+    object-fit: cover; /* Đảm bảo hình ảnh bao phủ khung hình mà không bị căn chỉnh */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px; /* Điều chỉnh chiều cao theo ý muốn */
+}
+
+iframe {
+    max-width: 100%;
+    max-height: 100%;
+}
+#pass{
+    background-color: yellow;
 }
