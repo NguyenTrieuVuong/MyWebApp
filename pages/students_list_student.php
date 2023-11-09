@@ -39,15 +39,15 @@
             </div>
             <div class="table-responsive">
                 <table class="table student_list table-borderless">
-                    <thead>
+                <thead>
                         <tr class="align-middle">
-                            <th class="opacity-0">vide</th>
-                            <th>Name</th>
+                            <th>Avatar</th>
+                            <th>Tên học viên</th>
                             <th>Email</th>
-                            <th>Phone</th>
-                            <th>Student code</th>
-                            <th>Date of admission</th>
-                            <th class="opacity-0">list</th>
+                            <th>Số điện thoại</th>
+                            <th>Mã học viên</th>
+                            <th>Ngày tham gia</th>
+                            <th class=""></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -63,10 +63,14 @@
                                 <td><?php echo $value['Phone'] ?></td>
                                 <td><?php echo $value['EnrollNumber'] ?></td>
                                 <td><?php echo $value['DateOfAdmission'] ?></td>
-                                <!-- <td class="d-md-flex gap-3 mt-3">
-                                  <a href="modifier.php?Id=<?php echo $value['Id']?>"><i class="far fa-pen"></i></a>
-                                  <a href="remove.php?Id=<?php echo $value['Id']?>"><i class="far fa-trash"></i></a>
-                                </td> -->
+                                
+                                <td>
+                                <a href="view.php?Id=<?php echo $value['Id']?>" class="view-student-link">
+                                <i class="far fa-eye"></i>
+                                </a>
+
+                                </td>
+
                         </tr> 
 
                         <?php endforeach; ?>
