@@ -16,7 +16,12 @@
             <li class="h7"><a class=" nav-link text-dark" href="students_list_student.php"><i class="far fa-graduation-cap me-2"></i> <span>Học Viên</span></a></li>
             <li class="h7"><a class=" nav-link text-dark" href="payment_details_student.php"><i class="fal fa-usd-square me-2"></i> <span>Thanh Toán</span></a></li>
             <li class="h7"><a class=" nav-link text-dark" href="about_student.php"><i class="fal fa-file-chart-line me-2"></i> <span>About</span></a></li>
+<<<<<<< HEAD
             <li class="h7"><a class=" nav-link text-dark" href="contact_student.php"><i class="fal fa-sliders-v-square me-2"></i> <span>Liên Hệ</span></a></li>
+=======
+            <li class="h7"><a class=" nav-link text-dark" href="contact_student.php"><i class="fal fa-sliders-v-square me-2"></i> <span>Contact</span></a></li>
+            <li class="h7"><a class=" nav-link text-dark" href="chat.php"><i class="fal fa-sliders-v-square me-2"></i><span>Chat</span></a>
+>>>>>>> d07503154cb95284a693a6ac136a097ce19bae11
         </ul>
         <ul class="logout d-flex justify-content-start list-unstyled">
             <li class=" h7"><a class="nav-link text-dark" href="../index.php"><span>Đăng xuất</span><i class="fal fa-sign-out-alt ms-2"></i></a></li>
