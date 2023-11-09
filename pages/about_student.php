@@ -37,36 +37,50 @@
             include "component/header.php";
             ?>
             <div class="fs-5 ms-5">
-                <p class = "mt-3">E-LEARNING-APPLICATION-V1.0:
-                    <br>
-                    dashboard simple pour gestion des course,students,payments...
-                    <br>
-                    ## lien de vedeo in youtube :
-                    https://www.youtube.com/watch?v=bDfINmhpzd0
-                    <br>
-                    ## technologie utiliser
-                    <br>
-                    ### front end :
-                    <br>
-                    html,css,framework bootstrap .
-                    <br>
-                    ### back end:
-                    php,sql server.
-                    <br>
-                    ## les pages du site:
-                    <br>
-                    ### sign in:
-                    email ,password:
-                    <br>
-                    ### home:
-                    statistique: nombre des course ,user,students,payments
-                    <br>
-                    ### students list:
-                    les informations des students: img,username,email...
-                    <br>
-                    ### payments:
-                    les informations de payments:
-                </p>
+                <div class="mt-3">
+                    <h2>Web E-LEARNING V1.0</h2>
+                    <p>Dashboard đơn giản để quản lý các học phần, sinh viên, thanh toán...</p>
+
+                    <h3>Video link trên YouTube :</h3>
+                    <a href="https://www.youtube.com/watch?v=bDfINmhpzd0">Watch the video here</a>
+
+                    <h3>Ngôn ngữ sử dụng</h3>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Front-end :</h4>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Framework Bootstrap</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h4>Back-end :</h4>
+                            <ul>
+                                <li>PHP</li>
+                                <li>SQL Server</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3>Các trang trong web :</h3>
+
+                    <h4>Đăng nhập :</h4>
+                    <p>Email, mật khẩu</p>
+
+                    <h4>Trang chủ :</h4>
+                    <p>Thống kê: Số lượng học phần, người dùng, sinh viên, thanh toán</p>
+
+                    <h4>List of students :</h4>
+                    <p>Thông tin sinh viên: Ảnh, username, email...</p>
+
+                    <h4>Thanh toán :</h4>
+                    <p>Thông tin thanh toán</p>
+                    <img src="../assets/img/Truong.jpg" alt="Description de l'image">
+                </div>
+
             </div>
         </div>
         <!-- end contentpage -->

@@ -60,33 +60,35 @@
                         </div>
                     </div> -->
                 <div class="courses">
-                    <table class="table table-responsive">
-                        <thead>
-                            <th>Courses</th>
-                            <th>Description</th>
-                            <th>Subject code</th>
-                        </thead>
-                        <tbody> 
-                        <?php include 'conixion.php'; 
-                                $requete = "SELECT * FROM courses";
-                                $result = $con -> query($requete);
+                <table class="table table-striped table-bordered">
+      
+      <thead class="thead-dark">
+          <tr>
+              <th scope="col">Tên khóa học</th>
+              <th scope="col">Mô tả</th>
+              <th scope="col">Giá bán</th>
+              <th scope="col"></th>
+          </tr>
+      </thead>
+      <tbody>
+          <?php
+          include 'conixion.php';
+          $requete = "SELECT * FROM courses";
+          $result = $con->query($requete);
 
-                                foreach($result as $value):
-                            ?>
+          foreach ($result as $value) :
+          ?>
 
-                            <tr> 
-                                <td><?php echo $value['Name'] ?></td>
-                                <td><?php echo $value['Description'] ?></td>
-                                <td><?php echo $value['Prix'] ?></td>
-                                <!-- <td class="d-md-flex gap-3 mt-3">
-                                  <a href="modifier_2.php?id=<?php echo $value['id']?>"><i class="far fa-pen"></i></a>
-                                  <a href="remove_2.php?id=<?php echo $value['id']?>"><i class="far fa-trash"></i></a>
-                                </td> -->
-                            </tr>
-                            
-                            <?php endforeach; ?>
-                        </tbody>
-                    </table>
+              <tr>
+                  <td><?php echo $value['Name'] ?></td>
+                  <td><?php echo $value['Description'] ?></td>
+                  <td><?php echo $value['Prix'] ?></td>
+                  
+              </tr>
+
+          <?php endforeach; ?>
+      </tbody>
+  </table>
                 </div>
             
             </div>

@@ -153,7 +153,7 @@ input[type="email"]::placeholder,input[type="password"]::placeholder{
 /* Đặt kiểu kẻ dọc và màu cho các đường kẻ dọc */
 .table td,
 .table th {
-    border-right: 3px solid #ccc; Thêm kẻ đứt đoạn bên phải mỗi ô
+    border-right: 3px solid #ccc; 
 }
 
 .student-list-header{
@@ -186,7 +186,7 @@ input[type="email"]::placeholder,input[type="password"]::placeholder{
 .valid{
     color: red;
 }
-@media screen and (min-width:768px){
+@media screen and (min-width:720px){
     .bg-sidebar{
         position: sticky !important;
         top: 0;
@@ -197,7 +197,7 @@ input[type="email"]::placeholder,input[type="password"]::placeholder{
         
     }
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:720px){
     .hidden-sidebar-mobile{
         margin-left: -50%;
     }
@@ -206,9 +206,10 @@ input[type="email"]::placeholder,input[type="password"]::placeholder{
 #img{
     position: fixed;
     display: flex;
-    margin-left: 220px;
-    margin-top: 10px;
+    margin-left: 360px;
+    margin-top: 20px;
     width: 40%;
+   
 }
 .table td, .table th {
     text-align: center; /* Căn giữa nội dung */
@@ -245,4 +246,58 @@ iframe {
 }
 #pass{
     background-color: yellow;
+}
+/* CSS cho cửa sổ modal */
+/* CSS cho cửa sổ modal */
+.student-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    overflow: auto;
+    padding: 20px;
+}
+.student-details {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 52px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    background-size: 50%;
+    border: 1px solid red; /* Tạo đường kẻ đỏ */
+    margin: 0 auto;
+    text-align: center;
+    transform: scale(2); /* Tăng kích thước lên 2 lần */
+    margin-top: 140px;
+}
+.student-details img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px; /* Tạo khoảng cách giữa hình ảnh và nội dung */
+}
+/* CSS cho đoạn mã PHP */
+.student-modal p {
+    margin: 0;
+}
+
+.student-modal strong {
+    font-weight: bold;
+}
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
 }

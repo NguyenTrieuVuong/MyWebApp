@@ -36,14 +36,14 @@ if (isset($_POST['submit'])) {
 <body class="container d-flex justify-content-center align-items-center">
 <form method="POST">
     <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Enter username</label>
+        <label for="exampleInputEmail1" class="form-label">Nhập username</label>
         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="username">
     </div>
     <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Enter Email</label>
+        <label for="exampleInputPassword1" class="form-label">Nhập email</label>
         <input type="text" class="form-control" id="exampleInputPassword1" name="email">
     </div>
-    <button type="submit" class="btn btn-primary" name="submit">Reset password</button>
+    <button type="submit" class="btn btn-primary" name="submit">Reset mật khẩu</button>
 </form>
 </body>
 </html>

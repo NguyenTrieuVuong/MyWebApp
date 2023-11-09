@@ -28,12 +28,14 @@
 
       <!-- start student list table -->
       <div class="button-add-student">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Payment</button>
+        <p></p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Thêm thanh toán</button>
+        <p></p>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Payments</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Thêm thanh Toán</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -64,8 +66,8 @@
                     <input type="date" class="form-control" id="recipient-name" name="Date">
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" name="submit" class="btn btn-primary">Add payment</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    <button type="submit" name="submit" class="btn btn-primary">Thêm mới</button>
                   </div>
                 </form>
               </div>
@@ -78,7 +80,7 @@
     <table class="table table-striped table-bordered">
         <thead class="thead-dark">
             <tr>
-                <th scope="col">Tên</th>
+                <th scope="col">Tên học viên</th>
                 <th scope="col">Lịch trình thanh toán</th>
                 <th scope="col">Số hóa đơn</th>
                 <th scope="col">Số tiền đã thanh toán</th>
@@ -104,7 +106,8 @@
                     <td><?php echo $value['Date'] ?></td>
                     <td class="d-md-flex gap-3 mt-3">
                                   <a href="modifier_3.php?id=<?php echo $value['id']?>"><i class="far fa-pen"></i></a>
-                                  <a href="remove_3.php?id=<?php echo $value['id']?>"><i class="far fa-trash"></i></a>
+                                  <a style="color: red;" href="javascript:void(0);" onclick="confirmDelete(<?php echo $value['id']?>)"><i class="far fa-trash"></i></a>
+
                                </td>
                 </tr>
 

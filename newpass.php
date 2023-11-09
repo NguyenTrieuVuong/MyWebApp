@@ -86,25 +86,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="col-md-6 offset-md-3">
                 <div class="card">
                     <div class="card-body">
-                        <h2 class="card-title text-center">Reset Password</h2>
+                        <h2 class="card-title text-center">Reset mật khẩu</h2>
                         <form method="POST">
                             <div class="form-group">
-                                <label for="username">Enter username</label>
+                                <label for="username">Nhập username</label>
                                 <input type="text" class="form-control" id="username" name="username" placeholder="Username">
                             </div>
                             <div class="form-group">
-                                <label for="email">Enter Email</label>
+                                <label for="email">Nhập Email</label>
                                 <input type="text" class="form-control" id="email" name="email" placeholder="Email">
                             </div>
                             <div class="form-group">
-                                <label for="new-password">New Password</label>
-                                <input type="password" class="form-control" id="new-password" name="new-password" placeholder="New Password">
+                                <label for="new-password">Mật khẩu mới</label>
+                                <input type="password" class="form-control" id="new-password" name="new-password" placeholder="Mật khẩu mới">
                             </div>
                             <div class="form-group">
-                                <label for="confirm-password">Confirm Password</label>
-                                <input type="password" class="form-control" id="confirm-password" name="confirm-password" placeholder="Confirm Password">
+                                <label for="confirm-password">Xác nhận mật khẩu</label>
+                                <input type="password" class="form-control" id="confirm-password" name="confirm-password" placeholder="Xác nhận mật khẩu">
                             </div>
-                            <button type="submit" class="btn btn-primary btn-block" name="submit">Reset Password</button>
+                            <button type="submit" class="btn btn-primary btn-block" name="submit">Reset mật khẩu</button>
                         </form>
                     </div>
                 </div>
