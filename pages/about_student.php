@@ -37,6 +37,7 @@
             include "component/header.php";
             ?>
             <div class="fs-5 ms-5">
+            <div class="fs-5 ms-5">
                 <div class="mt-3">
                     <h2>Web E-LEARNING V1.0</h2>
                     <p>Dashboard đơn giản để quản lý các học phần, sinh viên, thanh toán...</p>

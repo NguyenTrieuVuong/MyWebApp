@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in</title>
+    <title>Đăng nhập</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -33,11 +33,11 @@
         <form method="POST" action="login.php">
           <div class="mb-3 mt-3 text-start">
             <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="Nhập email" name="email" value="<?php  if(isset($_COOKIE['email'])){echo $_COOKIE['email']; }?>">
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" value="<?php  if(isset($_COOKIE['email'])){echo $_COOKIE['email']; }?>">
           </div>
           <div class="mb-3 text-start">
             <label for="pwd">Mật khẩu:</label>
-            <input type="password" class="form-control" id="pwd" placeholder="Nhập mật khẩu" name="pass" value="<?php  if(isset($_COOKIE['password'])){echo $_COOKIE['password']; }?>" autocomplete="on">
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pass" value="<?php  if(isset($_COOKIE['password'])){echo $_COOKIE['password']; }?>" autocomplete="on">
           </div>
           <div class="mb-3 form-check d-flex gap-2">
     <input type="checkbox" class="form-check-input" id="exampleCheck1" name="check">
@@ -61,12 +61,12 @@
        </div>
        <form method="POST" id="signup" action="createaccout.php">
            <div class="mb-3 mt-3 text-start">
-               <label class="label-signup" for="username">Username: <span class="valid"></span></label>
+               <label class="label-signup" for="username">username: <span class="valid"></span></label>
                <input type="text" class="form-control" id="username" placeholder="Nhập username" name="username">
            </div>
            <div class="mb-3 text-start">
                <label class="label-signup" for="email">Email: <span class="valid"></span></label>
-               <input type="email" class="form-control" id="Email" placeholder="Nhập email" name="email">
+               <input type="email" class="form-control" id="Email" placeholder="Nhập Email" name="email">
            </div>
            <div class="mb-3 text-start">
                <label class="label-signup" for="pwd">Tạo mật khẩu: <span class="valid"></span></label>
