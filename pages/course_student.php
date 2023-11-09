@@ -83,7 +83,14 @@
                   <td><?php echo $value['Name'] ?></td>
                   <td><?php echo $value['Description'] ?></td>
                   <td><?php echo $value['Prix'] ?></td>
-                  
+                  <td>
+                        <a href="mua.php?Id=<?php echo $value['id'] ?>" class="btn btn-primary" >
+                        <i class="far fa-pen" style="color: white;">  <span style="color: white;">Mua</span></i>
+                        </a>
+                        
+                        
+                       
+                    </td>
               </tr>
 
           <?php endforeach; ?>
