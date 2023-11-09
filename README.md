@@ -1,22 +1,22 @@
-# Web E-LEARNING-V1.0:
+# E-LEARNING-APPLICATION-V1.0:
 
-simple dashboard for managing races, students, payments...
+dashboard simple pour gestion des course,students,payments...
 
-## video link in youtube:
+## lien de vedeo in youtube :
 https://www.youtube.com/watch?v=bDfINmhpzd0
 
-## technology use
-   ### front end:
-   html, css, bootstrap framework.
-   ### back end:
-   php, sql server.
+## technologie utiliser
+  ### front end :
+  html,css,framework bootstrap .
+  ### back end:
+  php,sql server.
 
-## the pages of the site:
-   ### sign in:
-   email,password:
-   ### home:
-   statistics: number of courses, users, students, payments
-   ### students list:
-   student information: img, username, email...
-   ### payments:
-   payment information:
+## les pages du site:
+  ### sign in: 
+  email ,password:
+  ### home: 
+  statistique: nombre des course ,user,students,payments
+  ### students list: 
+  les informations des students: img,username,email...
+  ### payments:
+  les informations de payments:

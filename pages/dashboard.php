@@ -37,13 +37,8 @@
         <div class="container-fluid px">
             <?php
             include "component/header.php";
-<<<<<<< HEAD
             ?>
             <div class="cards row gap-3 justify-content-center mt-5">
-=======
-        ?>
-        <div class="cards row gap-3 justify-content-center mt-5">
->>>>>>> 108ba17d0c75ac0cfe3e22a60b7726ea059f0776
                 <div class=" card__items card__items--blue col-md-3 position-relative">
                     <div class="card__students d-flex flex-column gap-2 mt-3">
                         <i class="far fa-graduation-cap h3"></i>
@@ -82,7 +77,6 @@
                     </div>
                     <span class="h5 fw-bold nbr"><?php echo $nbr_user; ?></span>
                 </div>
-<<<<<<< HEAD
 
             </div>
 
@@ -94,19 +88,6 @@
         <!-- end contentpage -->
     </main>
 
-=======
-                
-            </div>
-            
-            <img src="https://nativespeaker.vn/resource/images/hoc-tieng-anh-voi-nguoi-nuoc-ngoai.jpg" id="img">
-            
-            
-        </div>
-         
-        <!-- end contentpage -->
-    </main>
-   
->>>>>>> 108ba17d0c75ac0cfe3e22a60b7726ea059f0776
     <script src="../js/script.js"></script>
     <script src="/js/bootstrap.bundle.js"></script>
 </body>
