@@ -49,7 +49,7 @@
     var inputs = this.getElementsByTagName('input');
     for (var i = 0; i < inputs.length; i++) {
       if (inputs[i].value == '') {
-        alert('Hãy điền hết tất cả các thông tin');
+        alert('Please fill in all information');
         event.preventDefault();
         return false;
       }
