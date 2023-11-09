@@ -42,15 +42,15 @@
                               <form method="POST" action="add_course.php" enctype="multipart/form-data" onsubmit="return validateForm();">
                                 <div class="">
                                   <label for="recipient-name" class="col-form-label">Tên khóa học:</label>
-                                  <input type="text" class="form-control" id="recipient-name" name="Name">
+                                  <input type="text" class="form-control" id="recipient-name" name="Name" required>
                                 </div>
                                 <div class="">
                                   <label for="description" class="col-form-label">Mô tả:</label>
-                                  <input type="text" class="form-control" id="description" name="Description">
+                                  <input type="text" class="form-control" id="description" name="Description" required>
                                 </div>
                                 <div class="">
                                   <label for="subject-code" class="col-form-label">Giá bán:</label>
-                                  <input type="text" class="form-control" id="subject-code" name="Prix">
+                                  <input type="text" class="form-control" id="subject-code" name="Prix" required>
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>

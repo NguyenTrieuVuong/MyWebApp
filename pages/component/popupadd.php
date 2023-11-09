@@ -12,27 +12,27 @@
           <form method="POST" action="addstudent.php" enctype="multipart/form-data">
             <div class="">
               <label for="recipient-name" class="col-form-label">Avatar(image):</label>
-              <input type="file" class="form-control" id="recipient-name" accept=".jpg,.png,.jpeg" name="img">
+              <input type="file" class="form-control" id="recipient-name" accept=".jpg,.png,.jpeg" name="img" >
             </div>
             <div class="">
               <label for="recipient-name" class="col-form-label">Tên học viên:</label>
-              <input type="text" class="form-control" id="recipient-name" name="Name">
+              <input type="text" class="form-control" id="recipient-name" name="Name" required>
             </div>
             <div class="">
               <label for="recipient-name" class="col-form-label">Email:</label>
-              <input type="text" class="form-control" id="recipient-name" name="Email">
+              <input type="text" class="form-control" id="recipient-name" name="Email" required>
             </div>
             <div class="">
               <label for="recipient-name" class="col-form-label">Số điện thoại:</label>
-              <input type="text" class="form-control" id="recipient-name" name="Phone">
+              <input type="text" class="form-control" id="recipient-name" name="Phone" required>
             </div>
             <div class="">
               <label for="recipient-name" class="col-form-label">Mã học viên:</label>
-              <input type="text" class="form-control" id="recipient-name" name="EnrollNumber">
+              <input type="text" class="form-control" id="recipient-name" name="EnrollNumber" required>
             </div>
             <div class="">
               <label for="recipient-name" class="col-form-label">Ngày tham gia:</label>
-              <input type="date" class="form-control" id="recipient-name" name="DateOfAdmission">
+              <input type="date" class="form-control" id="recipient-name" name="DateOfAdmission" required>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>

@@ -42,28 +42,28 @@
                 <form method="POST" action="add_payment.php" enctype="multipart/form-data">
 
                   <div class="">
-                    <label for="recipient-name" class="col-form-label">Name:</label>
-                    <input type="text" class="form-control" id="recipient-name" name="Name">
+                    <label for="recipient-name" class="col-form-label">Tên học viên:</label>
+                    <input type="text" class="form-control" id="recipient-name" name="Name" required>
                   </div>
                   <div class="">
-                    <label for="recipient-name" class="col-form-label">Lịch Trình:</label>
-                    <input type="date" class="form-control" id="recipient-name" name="PaymentSchedule">
+                    <label for="recipient-name" class="col-form-label">Lịch trình thanh toán:</label>
+                    <input type="date" class="form-control" id="recipient-name" name="PaymentSchedule" required>
                   </div>
                   <div class="">
                     <label for="recipient-name" class="col-form-label">Số Hóa Đơn:</label>
-                    <input type="text" class="form-control" id="recipient-name" name="BillNumber">
+                    <input type="text" class="form-control" id="recipient-name" name="BillNumber" required>
                   </div>
                   <div class="">
                     <label for="recipient-name" class="col-form-label">Số tiền đã thanh toán</label>
-                    <input type="text" class="form-control" id="recipient-name" name="AmountPaid">
+                    <input type="text" class="form-control" id="recipient-name" name="AmountPaid" required>
                   </div>
                   <div class="">
                     <label for="recipient-name" class="col-form-label">Số tiền còn nợ:</label>
-                    <input type="text" class="form-control" id="recipient-name" name="BalanceAmount">
+                    <input type="text" class="form-control" id="recipient-name" name="BalanceAmount" required> 
                   </div>
                   <div class="">
                     <label for="recipient-name" class="col-form-label">Ngày thanh toán:</label>
-                    <input type="date" class="form-control" id="recipient-name" name="Date">
+                    <input type="date" class="form-control" id="recipient-name" name="Date" required>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
