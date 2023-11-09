@@ -1,5 +1,4 @@
 <div class="button-add-student">
-  
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Thêm học viên</button>
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -9,7 +8,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form method="POST" action="addstudent.php" enctype="multipart/form-data">
+          <form id="studentForm" method="POST" action="addstudent.php" enctype="multipart/form-data">
             <div class="">
               <label for="recipient-name" class="col-form-label">Avatar(image):</label>
               <input type="file" class="form-control" id="recipient-name" accept=".jpg,.png,.jpeg" name="img">
@@ -44,3 +43,16 @@
     </div>
   </div>
 </div>
+
+<script>
+  document.getElementById('studentForm').addEventListener('submit', function(event) {
+    var inputs = this.getElementsByTagName('input');
+    for (var i = 0; i < inputs.length; i++) {
+      if (inputs[i].value == '') {
+        alert('Hãy điền hết tất cả các thông tin');
+        event.preventDefault();
+        return false;
+      }
+    }
+  });
+</script>
